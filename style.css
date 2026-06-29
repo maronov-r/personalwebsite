@@ -85,6 +85,13 @@ img { max-width: 100%; display: block; }
 
 .nav-links a:hover { color: var(--ink); background: var(--paper-warm); }
 
+.nav-links a.nav-tool {
+  color: var(--accent);
+  font-weight: 500;
+  border: 1px solid rgba(201,86,42,0.25);
+}
+.nav-links a.nav-tool:hover { background: var(--accent-light); border-color: var(--accent); }
+
 .nav-links a.nav-cta {
   background: var(--ink);
   color: var(--paper);
@@ -347,6 +354,24 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   min-height: 280px;
 }
+
+.screener-teaser {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 40px;
+  text-align: center;
+  transition: background 0.2s;
+}
+.screener-teaser:hover { background: var(--accent-light); }
+.screener-teaser:hover .screener-teaser-cta { color: var(--accent); letter-spacing: 0.04em; }
+
+.screener-teaser-inner { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.screener-teaser-icon { font-size: 2.2rem; color: var(--accent); opacity: 0.7; }
+.screener-teaser-title { font-family: var(--font-serif); font-size: 1.15rem; color: var(--ink); }
+.screener-teaser-desc { font-size: 0.82rem; color: var(--ink-muted); line-height: 1.55; max-width: 240px; }
+.screener-teaser-cta { font-size: 0.82rem; font-weight: 500; color: var(--ink-soft); margin-top: 8px; transition: all 0.2s; }
 
 .interactive-placeholder {
   text-align: center;
