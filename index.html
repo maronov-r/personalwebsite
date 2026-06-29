@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- STICKY NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">YN</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#now">Now</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Say hello</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#writing" class="mobile-link">Writing</a>
+    <a href="#now" class="mobile-link">Now</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#contact" class="mobile-link">Say hello</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Available for new opportunities</p>
+      <h1 class="hero-headline">
+        I turn messy problems<br />
+        into <em>clear, working</em><br />
+        solutions.
+      </h1>
+      <p class="hero-sub">
+        [Your tagline here — one sentence about what makes your work distinctive and who you help.]
+      </p>
+      <div class="hero-links">
+        <a href="https://linkedin.com" target="_blank" class="hero-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com" target="_blank" class="hero-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:you@email.com" class="hero-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Email
+        </a>
+        <a href="/resume.pdf" target="_blank" class="hero-link hero-link--resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Résumé
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </section>
+
+  <!-- FEATURED PROJECT -->
+  <section id="featured">
+    <div class="container">
+      <span class="section-label">Featured project</span>
+      <div class="featured-card">
+        <div class="featured-meta">
+          <span class="featured-tag">Product Design</span>
+          <span class="featured-tag">2024</span>
+        </div>
+        <h2 class="featured-title">Project Name Goes Here</h2>
+        <p class="featured-desc">
+          A one-paragraph description of your most impressive project. What was the context, why did it matter, and what was your role? Keep it punchy — three sentences max.
+        </p>
+        <div class="featured-pairbox">
+          <div class="featured-details">
+            <div class="detail-row">
+              <span class="detail-label">Problem</span>
+              <p>Describe the core challenge or pain point you were solving.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Approach</span>
+              <p>How did you think about it? What method or process did you use?</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">What I built</span>
+              <p>The concrete thing you made — tool, system, design, document.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Result</span>
+              <p class="result-text">A specific, ideally quantified outcome. 40% faster. 2× more users. Shipped on time.</p>
+            </div>
+          </div>
+          <div class="featured-interactive" id="featuredInteractive">
+            <div class="interactive-placeholder">
+              <div class="placeholder-icon">✦</div>
+              <p>Interactive element coming soon</p>
+              <span>This space will hold a live demo, visualization, or prototype for your featured project.</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="featured-link">View full case study →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK GRID -->
+  <section id="work">
+    <div class="container">
+      <span class="section-label">Selected work</span>
+      <h2 class="section-title">Projects that moved the needle</h2>
+      <div class="work-grid">
+
+        <article class="work-card">
+          <div class="work-card-header">
+            <div class="work-tags">
+              <span class="work-tag">Research</span>
+              <span class="work-tag">2024</span>
+            </div>
+            <h3>Project Title One</h3>
+            <p class="work-summary">A short description of what this project was about and why it was interesting or important.</p>
+          </div>
+          <div class="work-card-body">
+            <div class="work-row"><span>Problem</span><p>The specific challenge this project addressed.</p></div>
+            <div class="work-row"><span>Approach</span><p>Your thinking, method, or unique angle on the problem.</p></div>
+            <div class="work-row"><span>What I built</span><p>The artifact, system, or output you delivered.</p></div>
+            <div class="work-row work-row--result"><span>Result</span><p>Measurable outcome or clear impact.</p></div>
+          </div>
+          <a href="#" class="work-card-link">Read more →</a>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card-header">
+            <div class="work-tags">
+              <span class="work-tag">Engineering</span>
+              <span class="work-tag">2023</span>
+            </div>
+            <h3>Project Title Two</h3>
+            <p class="work-summary">Brief description of the second project and why it belongs in your portfolio.</p>
+          </div>
+          <div class="work-card-body">
+            <div class="work-row"><span>Problem</span><p>The specific challenge this project addressed.</p></div>
+            <div class="work-row"><span>Approach</span><p>Your thinking, method, or unique angle on the problem.</p></div>
+            <div class="work-row"><span>What I built</span><p>The artifact, system, or output you delivered.</p></div>
+            <div class="work-row work-row--result"><span>Result</span><p>Measurable outcome or clear impact.</p></div>
+          </div>
+          <a href="#" class="work-card-link">Read more →</a>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card-header">
+            <div class="work-tags">
+              <span class="work-tag">Strategy</span>
+              <span class="work-tag">2023</span>
+            </div>
+            <h3>Project Title Three</h3>
+            <p class="work-summary">Brief description of the third project and the context it came from.</p>
+          </div>
+          <div class="work-card-body">
+            <div class="work-row"><span>Problem</span><p>The specific challenge this project addressed.</p></div>
+            <div class="work-row"><span>Approach</span><p>Your thinking, method, or unique angle on the problem.</p></div>
+            <div class="work-row"><span>What I built</span><p>The artifact, system, or output you delivered.</p></div>
+            <div class="work-row work-row--result"><span>Result</span><p>Measurable outcome or clear impact.</p></div>
+          </div>
+          <a href="#" class="work-card-link">Read more →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITING PREVIEWS -->
+  <section id="writing">
+    <div class="container">
+      <span class="section-label">Writing</span>
+      <h2 class="section-title">Selected pieces</h2>
+      <div class="writing-list">
+
+        <a href="#" class="writing-item">
+          <div class="writing-meta">
+            <span class="writing-date">June 2025</span>
+            <span class="writing-tag">Essay</span>
+          </div>
+          <h3>The Title of Your First Article or Essay</h3>
+          <p>A two-sentence preview that gives readers just enough to want to click. End with a hook or a surprising claim.</p>
+          <span class="writing-read">Read →</span>
+        </a>
+
+        <a href="#" class="writing-item">
+          <div class="writing-meta">
+            <span class="writing-date">March 2025</span>
+            <span class="writing-tag">Analysis</span>
+          </div>
+          <h3>The Title of Your Second Piece</h3>
+          <p>A two-sentence preview that gives readers just enough to want to click. End with a hook or a surprising claim.</p>
+          <span class="writing-read">Read →</span>
+        </a>
+
+        <a href="#" class="writing-item">
+          <div class="writing-meta">
+            <span class="writing-date">January 2025</span>
+            <span class="writing-tag">Tutorial</span>
+          </div>
+          <h3>The Title of Your Third Piece</h3>
+          <p>A two-sentence preview that gives readers just enough to want to click. End with a hook or a surprising claim.</p>
+          <span class="writing-read">Read →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NOW / BUILD LOG -->
+  <section id="now">
+    <div class="container">
+      <span class="section-label">Now</span>
+      <h2 class="section-title">What I'm up to</h2>
+      <div class="now-grid">
+        <div class="now-current">
+          <h3>Currently</h3>
+          <p>A paragraph about what you're working on right now — a project, a job, a learning goal. Write it in present tense, conversationally. Updated periodically so recruiters know you're active.</p>
+          <p class="now-updated">Last updated: June 2025</p>
+        </div>
+        <div class="now-log">
+          <h3>Build log</h3>
+          <ul class="log-list">
+            <li>
+              <span class="log-date">Jun 29</span>
+              <span class="log-text">Launched this portfolio with Claude Code</span>
+            </li>
+            <li>
+              <span class="log-date">Jun 15</span>
+              <span class="log-text">Shipped [something you shipped recently]</span>
+            </li>
+            <li>
+              <span class="log-date">May 30</span>
+              <span class="log-text">Started [a project or learning initiative]</span>
+            </li>
+            <li>
+              <span class="log-date">May 10</span>
+              <span class="log-text">Wrote about [topic of your recent writing]</span>
+            </li>
+            <li>
+              <span class="log-date">Apr 22</span>
+              <span class="log-text">Completed [course, project, or milestone]</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I BUILT THIS -->
+  <section id="built-with">
+    <div class="container">
+      <div class="built-card">
+        <span class="section-label">Meta</span>
+        <h2>How I built this with Claude Code</h2>
+        <p>
+          This site was built entirely through conversation with Claude Code — Anthropic's AI coding tool — without me writing a single line of code by hand. I described what I wanted, asked questions, gave feedback, and Claude handled all the technical work: writing the HTML, CSS, and JavaScript, setting up hosting, and pushing it live.
+        </p>
+        <p>
+          It took [X hours / X sessions] from blank page to live URL. The most interesting part was [something you found surprising or fun about the process].
+        </p>
+        <a href="https://claude.ai/code" target="_blank" class="built-link">Try Claude Code →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <span class="section-label">About</span>
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-frame" id="photoFrame">
+            <div class="photo-placeholder">
+              <span>Your photo</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>Hi, I'm [Your Name].</h2>
+          <p class="about-lead">
+            A short, energetic bio — two or three sentences about who you are, what drives you, and what kind of work you do best.
+          </p>
+          <p>
+            A second paragraph with a bit more texture: where you're based, your background, what you care about outside of work. Keep it human.
+          </p>
+          <div class="skills-block">
+            <h3>Skills &amp; tools</h3>
+            <div class="skills-grid">
+              <div class="skill-group">
+                <span class="skill-group-label">Core</span>
+                <ul>
+                  <li>Skill one</li>
+                  <li>Skill two</li>
+                  <li>Skill three</li>
+                  <li>Skill four</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <span class="skill-group-label">Tools</span>
+                <ul>
+                  <li>Tool one</li>
+                  <li>Tool two</li>
+                  <li>Tool three</li>
+                  <li>Tool four</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <span class="skill-group-label">Learning</span>
+                <ul>
+                  <li>Thing you're learning</li>
+                  <li>Another one</li>
+                  <li>And another</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-cta">
+          <h2>Let's work together.</h2>
+          <p>Open to full-time roles and select project work. Best way to reach me is email.</p>
+          <a href="mailto:you@email.com" class="footer-email">you@email.com</a>
+        </div>
+        <div class="footer-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="/resume.pdf" target="_blank">Résumé</a>
+        </div>
+        <p class="footer-copy">© 2025 Your Name. Built with Claude Code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
