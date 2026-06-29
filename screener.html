@@ -41,115 +41,35 @@
     </div>
 
     <div class="screener-layout">
-
-      <!-- INPUTS -->
       <div class="screener-inputs">
         <h2>Deal inputs</h2>
-
         <div class="input-group">
           <span class="input-group-label">Acquisition</span>
-          <div class="input-row">
-            <label for="purchasePrice">Purchase Price</label>
-            <div class="input-wrap">
-              <span class="input-prefix">$</span>
-              <input type="number" id="purchasePrice" value="2500000" min="0" step="50000" />
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="downPayment">Down Payment</label>
-            <div class="input-wrap">
-              <input type="number" id="downPayment" value="25" min="0" max="100" step="1" />
-              <span class="input-suffix">%</span>
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="interestRate">Interest Rate</label>
-            <div class="input-wrap">
-              <input type="number" id="interestRate" value="6.5" min="0" max="20" step="0.1" />
-              <span class="input-suffix">%</span>
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="loanTerm">Loan Term</label>
-            <div class="input-wrap">
-              <input type="number" id="loanTerm" value="30" min="1" max="40" step="1" />
-              <span class="input-suffix">yrs</span>
-            </div>
-          </div>
+          <div class="input-row"><label for="purchasePrice">Purchase Price</label><div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="purchasePrice" value="2500000" min="0" step="50000" /></div></div>
+          <div class="input-row"><label for="downPayment">Down Payment</label><div class="input-wrap"><input type="number" id="downPayment" value="25" min="0" max="100" step="1" /><span class="input-suffix">%</span></div></div>
+          <div class="input-row"><label for="interestRate">Interest Rate</label><div class="input-wrap"><input type="number" id="interestRate" value="6.5" min="0" max="20" step="0.1" /><span class="input-suffix">%</span></div></div>
+          <div class="input-row"><label for="loanTerm">Loan Term</label><div class="input-wrap"><input type="number" id="loanTerm" value="30" min="1" max="40" step="1" /><span class="input-suffix">yrs</span></div></div>
         </div>
-
         <div class="input-group">
           <span class="input-group-label">Income</span>
-          <div class="input-row">
-            <label for="grossRent">Gross Annual Rent</label>
-            <div class="input-wrap">
-              <span class="input-prefix">$</span>
-              <input type="number" id="grossRent" value="240000" min="0" step="5000" />
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="vacancyRate">Vacancy Rate</label>
-            <div class="input-wrap">
-              <input type="number" id="vacancyRate" value="5" min="0" max="100" step="1" />
-              <span class="input-suffix">%</span>
-            </div>
-          </div>
+          <div class="input-row"><label for="grossRent">Gross Annual Rent</label><div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="grossRent" value="240000" min="0" step="5000" /></div></div>
+          <div class="input-row"><label for="vacancyRate">Vacancy Rate</label><div class="input-wrap"><input type="number" id="vacancyRate" value="5" min="0" max="100" step="1" /><span class="input-suffix">%</span></div></div>
         </div>
-
         <div class="input-group">
           <span class="input-group-label">Expenses</span>
-          <div class="input-row">
-            <label for="opexRate">Operating Expenses</label>
-            <div class="input-wrap">
-              <input type="number" id="opexRate" value="35" min="0" max="100" step="1" />
-              <span class="input-suffix">% of EGI</span>
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="closingCosts">Closing Costs</label>
-            <div class="input-wrap">
-              <input type="number" id="closingCosts" value="2" min="0" max="20" step="0.5" />
-              <span class="input-suffix">%</span>
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="capex">CapEx Reserve</label>
-            <div class="input-wrap">
-              <span class="input-prefix">$</span>
-              <input type="number" id="capex" value="5000" min="0" step="1000" />
-            </div>
-          </div>
+          <div class="input-row"><label for="opexRate">Operating Expenses</label><div class="input-wrap"><input type="number" id="opexRate" value="35" min="0" max="100" step="1" /><span class="input-suffix">% of EGI</span></div></div>
+          <div class="input-row"><label for="closingCosts">Closing Costs</label><div class="input-wrap"><input type="number" id="closingCosts" value="2" min="0" max="20" step="0.5" /><span class="input-suffix">%</span></div></div>
+          <div class="input-row"><label for="capex">CapEx Reserve</label><div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="capex" value="5000" min="0" step="1000" /></div></div>
         </div>
-
         <div class="input-group">
           <span class="input-group-label">Exit</span>
-          <div class="input-row">
-            <label for="holdPeriod">Hold Period</label>
-            <div class="input-wrap">
-              <input type="number" id="holdPeriod" value="5" min="1" max="30" step="1" />
-              <span class="input-suffix">yrs</span>
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="rentGrowth">Annual Rent Growth</label>
-            <div class="input-wrap">
-              <input type="number" id="rentGrowth" value="2.5" min="0" max="20" step="0.5" />
-              <span class="input-suffix">%</span>
-            </div>
-          </div>
-          <div class="input-row">
-            <label for="exitCapRate">Exit Cap Rate</label>
-            <div class="input-wrap">
-              <input type="number" id="exitCapRate" value="6.0" min="0" max="20" step="0.25" />
-              <span class="input-suffix">%</span>
-            </div>
-          </div>
+          <div class="input-row"><label for="holdPeriod">Hold Period</label><div class="input-wrap"><input type="number" id="holdPeriod" value="5" min="1" max="30" step="1" /><span class="input-suffix">yrs</span></div></div>
+          <div class="input-row"><label for="rentGrowth">Annual Rent Growth</label><div class="input-wrap"><input type="number" id="rentGrowth" value="2.5" min="0" max="20" step="0.5" /><span class="input-suffix">%</span></div></div>
+          <div class="input-row"><label for="exitCapRate">Exit Cap Rate</label><div class="input-wrap"><input type="number" id="exitCapRate" value="6.0" min="0" max="20" step="0.25" /><span class="input-suffix">%</span></div></div>
         </div>
       </div>
 
-      <!-- RESULTS -->
       <div class="screener-results">
-
         <div class="verdict-card" id="verdictCard">
           <div class="verdict-icon" id="verdictIcon">✓</div>
           <div class="verdict-text">
@@ -157,75 +77,35 @@
             <p class="verdict-reason" id="verdictReason">Cash-on-cash and DSCR clear minimum thresholds.</p>
           </div>
         </div>
-
         <h2>Key metrics</h2>
-
         <div class="metrics-grid">
-          <div class="metric-card">
-            <span class="metric-label">Cap Rate</span>
-            <span class="metric-value" id="capRate">—</span>
-            <span class="metric-benchmark">Benchmark: &gt;5.5%</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-label">Cash-on-Cash Return</span>
-            <span class="metric-value" id="cocReturn">—</span>
-            <span class="metric-benchmark">Benchmark: &gt;7%</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-label">DSCR</span>
-            <span class="metric-value" id="dscr">—</span>
-            <span class="metric-benchmark">Benchmark: &gt;1.25×</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-label">Equity Multiple</span>
-            <span class="metric-value" id="equityMultiple">—</span>
-            <span class="metric-benchmark">Benchmark: &gt;1.5×</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-label">IRR (Levered)</span>
-            <span class="metric-value" id="irr">—</span>
-            <span class="metric-benchmark">Benchmark: &gt;12%</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-label">NOI (Year 1)</span>
-            <span class="metric-value" id="noi">—</span>
-            <span class="metric-benchmark">Net operating income</span>
-          </div>
+          <div class="metric-card"><span class="metric-label">Cap Rate</span><span class="metric-value" id="capRate">—</span><span class="metric-benchmark">Benchmark: &gt;5.5%</span></div>
+          <div class="metric-card"><span class="metric-label">Cash-on-Cash Return</span><span class="metric-value" id="cocReturn">—</span><span class="metric-benchmark">Benchmark: &gt;7%</span></div>
+          <div class="metric-card"><span class="metric-label">DSCR</span><span class="metric-value" id="dscr">—</span><span class="metric-benchmark">Benchmark: &gt;1.25×</span></div>
+          <div class="metric-card"><span class="metric-label">Equity Multiple</span><span class="metric-value" id="equityMultiple">—</span><span class="metric-benchmark">Benchmark: &gt;1.5×</span></div>
+          <div class="metric-card"><span class="metric-label">IRR (Levered)</span><span class="metric-value" id="irr">—</span><span class="metric-benchmark">Benchmark: &gt;12%</span></div>
+          <div class="metric-card"><span class="metric-label">NOI (Year 1)</span><span class="metric-value" id="noi">—</span><span class="metric-benchmark">Net operating income</span></div>
         </div>
-
         <div class="waterfall">
           <h2>Income &amp; expense waterfall</h2>
           <div class="waterfall-rows" id="waterfallRows"></div>
         </div>
-
         <div class="dcf-table-wrap">
           <h2>5-year cash flow projection</h2>
           <div class="dcf-scroll">
             <table class="dcf-table" id="dcfTable">
-              <thead>
-                <tr>
-                  <th>Line item</th>
-                  <th>Yr 1</th>
-                  <th>Yr 2</th>
-                  <th>Yr 3</th>
-                  <th>Yr 4</th>
-                  <th>Yr 5</th>
-                </tr>
-              </thead>
+              <thead><tr><th>Line item</th><th>Yr 1</th><th>Yr 2</th><th>Yr 3</th><th>Yr 4</th><th>Yr 5</th></tr></thead>
               <tbody id="dcfBody"></tbody>
             </table>
           </div>
         </div>
-
         <p class="screener-disclaimer">For illustrative and educational purposes only. Not financial or investment advice.</p>
       </div>
-
     </div>
   </main>
 
   <script src="screener.js"></script>
   <script>
-    // Nav scroll + hamburger (same as main site)
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
     const hamburger = document.querySelector('.nav-hamburger');

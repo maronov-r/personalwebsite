@@ -473,8 +473,8 @@ img { max-width: 100%; display: block; }
 }
 .work-card-link:hover { background: var(--accent-light); }
 
-/* ===== WRITING ===== */
-#writing { padding: 80px 0 120px; background: var(--paper-warm); }
+/* ===== WRITING / COURSEWORK ===== */
+#coursework { padding: 80px 0 120px; background: var(--paper-warm); }
 
 .writing-list { display: flex; flex-direction: column; gap: 0; }
 
