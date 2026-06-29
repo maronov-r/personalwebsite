@@ -485,6 +485,13 @@ img { max-width: 100%; display: block; }
   padding-top: 4px;
 }
 
+.coursework-note {
+  margin-top: 32px;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
 /* ===== NOW ===== */
 #now { padding: 120px 0; }
 
