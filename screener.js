@@ -44,7 +44,7 @@ function calculate() {
   const opexPct       = get('opexRate') / 100;
   const closingCostPct= get('closingCosts') / 100;
   const capexAnnual   = get('capex');
-  const holdPeriod    = Math.round(get('holdPeriod'));
+  const holdPeriod    = Math.min(30, Math.max(1, Math.round(get('holdPeriod'))));
   const rentGrowthPct = get('rentGrowth') / 100;
   const exitCapPct    = get('exitCapRate') / 100;
 
@@ -123,7 +123,6 @@ function calculate() {
   const vc = el('verdictCard');
   vc.className = 'verdict-card';
   if (passes === 3) {
-    vc.classList.add('');
     el('verdictIcon').textContent = '✓';
     el('verdictLabel').textContent = 'Deal Pencils';
     el('verdictReason').textContent = 'Cap rate, cash-on-cash, and DSCR all clear minimum thresholds.';
@@ -163,6 +162,8 @@ function calculate() {
   }).join('');
 
   // DCF table
+  el('dcfHead').innerHTML = '<th>Line item</th>' + years.map(y => `<th>Yr ${y.yr}</th>`).join('');
+  el('dcfTitle').textContent = holdPeriod + '-year cash flow projection';
   const rows = [
     { label: 'Gross Rent',          vals: years.map(y => fmt$(y.rent)),  cls: '' },
     { label: 'Effective Gross Income', vals: years.map(y => fmt$(y.egi)), cls: '' },

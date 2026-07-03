@@ -58,7 +58,7 @@
           <div class="input-row">
             <label for="downPayment">Down Payment</label>
             <div class="input-wrap">
-              <input type="number" id="downPayment" value="25" min="0" max="100" step="1" />
+              <input type="number" id="downPayment" value="35" min="0" max="100" step="1" />
               <span class="input-suffix">%</span>
             </div>
           </div>
@@ -84,7 +84,7 @@
             <label for="grossRent">Gross Annual Rent</label>
             <div class="input-wrap">
               <span class="input-prefix">$</span>
-              <input type="number" id="grossRent" value="240000" min="0" step="5000" />
+              <input type="number" id="grossRent" value="260000" min="0" step="5000" />
             </div>
           </div>
           <div class="input-row">
@@ -199,17 +199,12 @@
         </div>
 
         <div class="dcf-table-wrap">
-          <h2>5-year cash flow projection</h2>
+          <h2 id="dcfTitle">5-year cash flow projection</h2>
           <div class="dcf-scroll">
             <table class="dcf-table" id="dcfTable">
               <thead>
-                <tr>
+                <tr id="dcfHead">
                   <th>Line item</th>
-                  <th>Yr 1</th>
-                  <th>Yr 2</th>
-                  <th>Yr 3</th>
-                  <th>Yr 4</th>
-                  <th>Yr 5</th>
                 </tr>
               </thead>
               <tbody id="dcfBody"></tbody>
@@ -230,7 +225,7 @@
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
     const hamburger = document.querySelector('.nav-hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    hamburger.addEventListener('click', () => { mobileMenu.classList.toggle('open'); hamburger.classList.toggle('open'); });
     document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
   </script>
 </body>

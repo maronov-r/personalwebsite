@@ -10,10 +10,14 @@ const mobileMenu = document.getElementById('mobileMenu');
 
 hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('open');
 });
 
 document.querySelectorAll('.mobile-link').forEach(link => {
-  link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+  });
 });
 
 // Scroll reveal
@@ -42,8 +46,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       navLinks.forEach(a => {
-        a.style.fontWeight = a.getAttribute('href') === `#${entry.target.id}` ? '500' : '';
-        a.style.color = a.getAttribute('href') === `#${entry.target.id}` ? 'var(--ink)' : '';
+        a.classList.toggle('active', a.getAttribute('href') === `#${entry.target.id}`);
       });
     }
   });
