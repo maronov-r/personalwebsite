@@ -11,19 +11,19 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- STICKY NAV -->
   <nav id="nav">
-    <a href="#" class="nav-logo">MA</a>
+    <a href="#" class="nav-logo">M<em>.</em>A</a>
     <ul class="nav-links">
       <li><a href="#work">Work</a></li>
       <li><a href="#coursework">Coursework</a></li>
       <li><a href="#now">Now</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="screener.html" class="nav-tool">Deal Screener ✦</a></li>
+      <li><a href="screener.html" class="nav-tool">Deal Screener</a></li>
       <li><a href="#contact" class="nav-cta">Say hello</a></li>
     </ul>
     <button class="nav-hamburger" aria-label="Toggle menu">
@@ -36,80 +36,112 @@
     <a href="#coursework" class="mobile-link">Coursework</a>
     <a href="#now" class="mobile-link">Now</a>
     <a href="#about" class="mobile-link">About</a>
+    <a href="screener.html" class="mobile-link">Deal Screener</a>
     <a href="#contact" class="mobile-link">Say hello</a>
   </div>
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-inner">
-      <p class="hero-eyebrow">Targeting Junior Acquisitions — NYC boutique &amp; family office operators</p>
-      <h1 class="hero-headline">
-        I read rooms.<br />
-        I earn trust.<br />
-        I'm breaking into <em>NYC real estate.</em>
-      </h1>
-      <p class="hero-sub">
-        Finance student at Baruch, military academy graduate, and founder — building the analytical foundation to match the relationship intelligence I've already proven in the field.
-      </p>
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/mark-r-aronov/" target="_blank" rel="noopener" class="hero-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-        </a>
-        <a href="mailto:mreuvenaronov@gmail.com" class="hero-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-          Email
-        </a>
-        <a href="resume.pdf" target="_blank" rel="noopener" class="hero-link hero-link--resume">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Résumé
-        </a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Targeting Junior Acquisitions — NYC boutique &amp; family office operators</p>
+        <h1 class="hero-headline">
+          I read rooms.<br />
+          I earn trust.<br />
+          I'm breaking into <em>NYC real estate.</em>
+        </h1>
+        <p class="hero-sub">
+          Finance student at Baruch, military academy graduate, and founder — building the analytical foundation to match the relationship intelligence I've already proven in the field.
+        </p>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/mark-r-aronov/" target="_blank" rel="noopener" class="hero-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:mreuvenaronov@gmail.com" class="hero-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="hero-link hero-link--resume">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Résumé
+          </a>
+        </div>
       </div>
+
+      <!-- Deal-sheet: the track record, styled like a term sheet -->
+      <aside class="hero-sheet" aria-label="Track record summary">
+        <div class="hero-sheet-head">
+          <span>Aronov, M. — Summary</span>
+          <span>NYC</span>
+        </div>
+        <dl class="hero-sheet-rows">
+          <div class="sheet-row">
+            <dt>Chapter debt resolved as Exchequer</dt>
+            <dd>$30,000</dd>
+          </div>
+          <div class="sheet-row">
+            <dt>Increase in chapter funding</dt>
+            <dd>300%</dd>
+          </div>
+          <div class="sheet-row">
+            <dt>Cadets led to best-platoon award</dt>
+            <dd>25</dd>
+          </div>
+          <div class="sheet-row">
+            <dt>Years of referral-only profitability</dt>
+            <dd>3</dd>
+          </div>
+          <div class="sheet-row">
+            <dt>Finance GPA, Baruch Zicklin</dt>
+            <dd>3.6 <small>May '27</small></dd>
+          </div>
+        </dl>
+        <div class="hero-sheet-foot">
+          <span>Verified on request</span>
+          <span>References available</span>
+        </div>
+      </aside>
     </div>
-    <div class="hero-scroll-hint">scroll</div>
+    <div class="hero-scroll-hint">scroll ↓</div>
   </section>
 
-  <!-- FEATURED PROJECT -->
+  <!-- FEATURED STORY -->
   <section id="featured">
     <div class="container">
-      <span class="section-label">Featured story</span>
-      <div class="featured-card">
-        <div class="featured-meta">
-          <span class="featured-tag">Leadership</span>
-          <span class="featured-tag">Camden Military Academy</span>
-        </div>
-        <h2 class="featured-title">Turning Around a Platoon by Reading What Rank Couldn't See</h2>
-        <p class="featured-desc">
-          At Camden Military Academy I was promoted to Platoon Leader — 2nd Lieutenant, responsible for 25 cadets who were genuinely difficult to manage. The easy move was authority. I had the rank to use it. I didn't.
-        </p>
-        <div class="featured-pairbox">
-          <div class="featured-details">
-            <div class="detail-row">
-              <span class="detail-label">Problem</span>
-              <p>25 cadets, high friction, low cohesion. Standard discipline hadn't worked. The rank gave me authority but authority alone wasn't moving anything.</p>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Approach</span>
-              <p>One-on-one conversations with every cadet — not to deliver orders but to find the actual root of what was going on. Some needed structure. Some needed to feel seen. Some had things beneath the surface that explained everything.</p>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">What I built</span>
-              <p>Trust. One person at a time. A platoon where people knew I had read their situation accurately — and that I'd use that to help them, not manage them.</p>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Result</span>
-              <p class="result-text">By end of semester, the platoon had turned around completely. We won the award for best platoon.</p>
-            </div>
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>Featured story</h2>
+        <span class="head-note">Camden Military Academy</span>
+      </div>
+      <div class="featured-frame">
+        <div class="featured-side">
+          <p class="featured-kicker">Leadership · Platoon Leader, 2nd Lieutenant</p>
+          <h3 class="featured-title">Turning around a platoon by reading what rank couldn't see</h3>
+          <p class="featured-desc">
+            At Camden Military Academy I was promoted to Platoon Leader — responsible for 25 cadets who were genuinely difficult to manage. The easy move was authority. I had the rank to use it. I didn't.
+          </p>
+          <div class="featured-pull">
+            <strong>Best platoon award</strong>
+            <span>by end of semester — from the most difficult platoon on campus</span>
           </div>
-          <div class="featured-interactive" id="featuredInteractive">
-            <a href="screener.html" class="screener-teaser">
-              <div class="screener-teaser-inner">
-                <div class="screener-teaser-icon">⬡</div>
-                <p class="screener-teaser-title">Live Deal Screener</p>
-                <p class="screener-teaser-desc">Plug in a purchase price, rent, and financing terms — get instant NOI, DSCR, cash-on-cash, IRR, and a pass/fail verdict.</p>
-                <span class="screener-teaser-cta">Open the tool →</span>
-              </div>
-            </a>
+        </div>
+        <div class="featured-details">
+          <div class="detail-row">
+            <span class="detail-label">Problem</span>
+            <p>25 cadets, high friction, low cohesion. Standard discipline hadn't worked. The rank gave me authority but authority alone wasn't moving anything.</p>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Approach</span>
+            <p>One-on-one conversations with every cadet — not to deliver orders but to find the actual root of what was going on. Some needed structure. Some needed to feel seen. Some had things beneath the surface that explained everything.</p>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">What I built</span>
+            <p>Trust. One person at a time. A platoon where people knew I had read their situation accurately — and that I'd use that to help them, not manage them.</p>
+          </div>
+          <div class="detail-row detail-row--result">
+            <span class="detail-label">Result</span>
+            <p class="result-text">By end of semester, the platoon had turned around completely. We won the award for best platoon.</p>
           </div>
         </div>
       </div>
@@ -119,58 +151,70 @@
   <!-- SELECTED WORK GRID -->
   <section id="work">
     <div class="container">
-      <span class="section-label">Selected work</span>
-      <h2 class="section-title">How I've operated</h2>
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>How I've operated</h2>
+        <span class="head-note">Results first — details below</span>
+      </div>
       <div class="work-grid">
 
         <article class="work-card">
+          <div class="work-result-band">
+            <div class="work-result-stat">$30K → $0</div>
+            <div class="work-result-caption">Debt resolved · funding up 300%</div>
+          </div>
           <div class="work-card-header">
             <div class="work-tags">
               <span class="work-tag">Finance &amp; Operations</span>
-              <span class="work-tag">2023–2024</span>
+              <span class="work-tag">2023–24</span>
             </div>
-            <h3>Turning Around a Chapter $30K in Debt</h3>
+            <h3>Turning around a chapter $30K in debt</h3>
             <p class="work-summary">As Exchequer of Alpha Epsilon Pi, I inherited a chapter deep in debt with the national organization. Collecting dues from brothers who couldn't or wouldn't pay was the core problem. I didn't treat every conversation the same.</p>
           </div>
           <div class="work-card-body">
             <div class="work-row"><span>Problem</span><p>$30,000+ in debt, no financial infrastructure, and a dues collection problem that defaulted to confrontation.</p></div>
             <div class="work-row"><span>Approach</span><p>Read each person's situation individually — who needed a payment plan, who needed accountability, who needed me to back off and return differently. Negotiated debt forgiveness terms with the national office in parallel.</p></div>
-            <div class="work-row"><span>What I built</span><p>A full financial system: formalized board structures, systematic accounting, and accounts receivable tracking. The relationships held throughout.</p></div>
-            <div class="work-row work-row--result"><span>Result</span><p>Resolved $30K in debt. Generated a 300% increase in chapter funding. The controls outlasted my tenure.</p></div>
+            <div class="work-row"><span>What I built</span><p>A full financial system: formalized board structures, systematic accounting, and accounts receivable tracking. The relationships held throughout — and the controls outlasted my tenure.</p></div>
           </div>
         </article>
 
         <article class="work-card">
+          <div class="work-result-band">
+            <div class="work-result-stat">3 yrs profitable</div>
+            <div class="work-result-caption">100% referral-driven · zero paid acquisition</div>
+          </div>
           <div class="work-card-header">
             <div class="work-tags">
               <span class="work-tag">Entrepreneurship</span>
-              <span class="work-tag">2022–2025</span>
+              <span class="work-tag">2022–25</span>
             </div>
-            <h3>Building a Business Entirely on Trust</h3>
+            <h3>Building a business entirely on trust</h3>
             <p class="work-summary">Founded Elite Academic Coaching from scratch — no paid marketing, no agency, no cold outreach. Grew entirely through referrals by delivering consistent results and building real relationships with families.</p>
           </div>
           <div class="work-card-body">
             <div class="work-row"><span>Problem</span><p>Students needed reliable academic support. The existing market was expensive agencies with inconsistent quality and zero personal accountability.</p></div>
             <div class="work-row"><span>Approach</span><p>Let results do the outreach. Kept clients for an average of 2+ years. Built a reporting loop with parents — email summaries after every session — so trust compounded over time.</p></div>
             <div class="work-row"><span>What I built</span><p>A remote operation with 7+ tutors, accurate P&amp;L forecasting, and predictable recurring cash flow — bootstrapped, no outside capital.</p></div>
-            <div class="work-row work-row--result"><span>Result</span><p>3 years of sustained profitability. 100% referral-driven. Zero paid acquisition.</p></div>
           </div>
         </article>
 
         <article class="work-card">
+          <div class="work-result-band">
+            <div class="work-result-stat">Live underwriting</div>
+            <div class="work-result-caption">Growing client base · referral-built</div>
+          </div>
           <div class="work-card-header">
             <div class="work-tags">
               <span class="work-tag">Risk &amp; Underwriting</span>
-              <span class="work-tag">2025–Present</span>
+              <span class="work-tag">2025–Now</span>
             </div>
-            <h3>Underwriting in the Field — Northwestern Mutual</h3>
+            <h3>Underwriting in the field — Northwestern Mutual</h3>
             <p class="work-summary">As a College Financial Representative, I'm applying risk assessment and underwriting analysis in a live context — reading clients, structuring cases, and building the kind of relationship credibility that makes deals happen.</p>
           </div>
           <div class="work-card-body">
             <div class="work-row"><span>Problem</span><p>HNW clients and executives needed coverage that addressed real gaps — not a generic product pitch but a structured analysis of their actual exposure.</p></div>
             <div class="work-row"><span>Approach</span><p>Conducted comprehensive risk assessments — medical and financial data — and structured cases to meet strict home office underwriting standards.</p></div>
             <div class="work-row"><span>What I built</span><p>Integrated financial plans combining debt, tax, and insurance strategy. Client base grown entirely through networking and referrals — the same way small RE shops actually hire.</p></div>
-            <div class="work-row work-row--result"><span>Result</span><p>Active and growing client base. Direct, applied experience in underwriting analysis and relationship-driven business development.</p></div>
           </div>
         </article>
 
@@ -178,11 +222,38 @@
     </div>
   </section>
 
+  <!-- DEAL SCREENER BAND -->
+  <section id="tool">
+    <div class="container">
+      <div class="tool-grid">
+        <div class="tool-copy">
+          <p class="mono" style="color:#d8a06e; margin-bottom:18px;">Proof of work · Built for this site</p>
+          <h2>Does the deal <em>pencil?</em> Run the numbers yourself.</h2>
+          <p>I built a live underwriting screener — purchase price, rent, financing terms in; NOI, DSCR, cash-on-cash, IRR, and a pass/fail verdict out. It reflects how acquisitions teams actually think about a first-pass screen, and it's how I'm building the fluency the role demands.</p>
+          <a href="screener.html" class="tool-cta">Open the Deal Screener →</a>
+        </div>
+        <div class="tool-preview" aria-hidden="true">
+          <div class="tool-preview-head">
+            <span>Sample screen</span>
+            <span>$2.5M · Multifamily</span>
+          </div>
+          <div class="tool-metric"><span>Cap Rate</span><strong>6.42%</strong></div>
+          <div class="tool-metric"><span>DSCR</span><strong>1.30×</strong></div>
+          <div class="tool-metric"><span>Equity Multiple</span><strong>2.29×</strong></div>
+          <div class="tool-metric"><span>IRR (Levered)</span><strong class="hot">11.98%</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- COURSEWORK -->
   <section id="coursework">
     <div class="container">
-      <span class="section-label">Coursework</span>
-      <h2 class="section-title">Relevant academic work</h2>
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>Relevant academic work</h2>
+        <span class="head-note">BBA Finance · Zicklin School of Business</span>
+      </div>
       <div class="writing-list">
 
         <div class="writing-item">
@@ -219,21 +290,23 @@
         </div>
 
       </div>
-      <p class="coursework-note">BBA in Finance · Zicklin School of Business, CUNY Baruch College · GPA 3.6 · Expected May 2027</p>
+      <p class="coursework-note">BBA in Finance · CUNY Baruch College · GPA 3.6 · Expected May 2027</p>
     </div>
   </section>
 
   <!-- NOW / BUILD LOG -->
   <section id="now">
     <div class="container">
-      <span class="section-label">Now</span>
-      <h2 class="section-title">What I'm up to</h2>
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>What I'm up to</h2>
+        <span class="head-note">Updated June 2025</span>
+      </div>
       <div class="now-grid">
         <div class="now-current">
           <h3>Currently</h3>
           <p>I'm four weeks into a structured career exploration program focused on breaking into NYC commercial real estate acquisitions. That means: talking to real practitioners, mapping the landscape, building proof of work, and stress-testing my hypothesis about where I fit. The target is Junior Acquisitions Analyst at a small NYC commercial or multifamily operator — boutique or family office, 10–50 people.</p>
           <p>In parallel, finishing my BBA in Finance at Baruch's Zicklin School and building the underwriting fluency the role demands. The deal screener on this site is one piece of that.</p>
-          <p class="now-updated">Last updated: June 2025</p>
         </div>
         <div class="now-log">
           <h3>Build log</h3>
@@ -259,7 +332,7 @@
               <span class="log-text">Conversation with Alan B., Senior Acquisitions Analyst — learned small shops give A-to-Z exposure</span>
             </li>
             <li>
-              <span class="log-date">Jun 2025</span>
+              <span class="log-date">Jun '25</span>
               <span class="log-text">Started as College Financial Representative at Northwestern Mutual</span>
             </li>
           </ul>
@@ -272,15 +345,17 @@
   <section id="built-with">
     <div class="container">
       <div class="built-card">
-        <span class="section-label">Meta</span>
-        <h2>How I built this with Claude Code</h2>
-        <p>
-          This site was built entirely through conversation with Claude Code — Anthropic's AI coding tool — without me writing a single line of code by hand. I described what I wanted, asked questions, gave feedback, and Claude handled all the technical work: writing the HTML, CSS, and JavaScript, setting up hosting, and pushing it live.
-        </p>
-        <p>
-          Blank page to live URL in a handful of working sessions — including the deal screener, a real underwriting calculator with DSCR, cash-on-cash, and IRR built through the same back-and-forth. The interesting part: the process felt less like using a tool and more like directing a very fast collaborator. My job was knowing what I wanted and why. That part doesn't get automated.
-        </p>
-        <a href="https://claude.ai/code" target="_blank" rel="noopener" class="built-link">Try Claude Code →</a>
+        <div class="built-mark">§</div>
+        <div>
+          <h2>How I built this with Claude Code</h2>
+          <p>
+            This site was built entirely through conversation with Claude Code — Anthropic's AI coding tool — without me writing a single line of code by hand. I described what I wanted, asked questions, gave feedback, and Claude handled all the technical work: writing the HTML, CSS, and JavaScript, setting up hosting, and pushing it live.
+          </p>
+          <p>
+            Blank page to live URL in a handful of working sessions — including the deal screener, a real underwriting calculator with DSCR, cash-on-cash, and IRR built through the same back-and-forth. The interesting part: the process felt less like using a tool and more like directing a very fast collaborator. My job was knowing what I wanted and why. That part doesn't get automated.
+          </p>
+          <a href="https://claude.ai/code" target="_blank" rel="noopener" class="built-link">Try Claude Code →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -288,14 +363,20 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <span class="section-label">About</span>
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>About</h2>
+        <span class="head-note">Brooklyn, NY</span>
+      </div>
       <div class="about-grid">
         <div class="about-photo">
           <div class="photo-frame" id="photoFrame">
             <div class="photo-placeholder">
-              <span>Photo coming soon</span>
+              <span class="ph-mono">Aronov · Brooklyn, NY</span>
+              <span class="ph-initials">M.A</span>
             </div>
           </div>
+          <p class="photo-caption">Portrait in progress</p>
         </div>
         <div class="about-content">
           <h2>Hi, I'm Mark Aronov.</h2>
@@ -346,15 +427,17 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-cta">
-          <h2>Let's talk deals.</h2>
+          <p class="footer-kicker">06 — Contact</p>
+          <h2>Let's talk <em>deals.</em></h2>
           <p>Targeting junior acquisitions roles at small NYC commercial and multifamily operators. If you work in the space or know someone who does, I'd love a conversation.</p>
           <a href="mailto:mreuvenaronov@gmail.com" class="footer-email">mreuvenaronov@gmail.com</a>
         </div>
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/mark-r-aronov/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="resume.pdf" target="_blank" rel="noopener">Résumé</a>
+          <a href="screener.html">Deal Screener</a>
         </div>
-        <p class="footer-copy">© 2025 Mark Aronov. Built with Claude Code.</p>
+        <p class="footer-copy">© 2025 Mark Aronov · Built with Claude Code · New York City</p>
       </div>
     </div>
   </footer>
